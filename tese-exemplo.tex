@@ -1,3 +1,6 @@
+% Arquivo LaTeX de exemplo de disserta��o/tese a ser apresentados � CPG do IME-USP
+% 
+% Vers�o 5: Sex Mar  9 18:05:40 BRT 2012
 % Arquivo LaTeX de exemplo de dissertação/tese a ser apresentados - CPG do IME-USP
 % 
 % Versão 5: Sex Mar  9 18:05:40 BRT 2012
@@ -182,8 +185,8 @@ text text text.
 \noindent \textbf{Keywords:} keyword1, keyword2, keyword3.
 
 % ---------------------------------------------------------------------------- %
-% Sumário
-\tableofcontents    % imprime o sumário
+% Sum�rio
+\tableofcontents    % imprime o sum�rio
 
 % ---------------------------------------------------------------------------- %
 \chapter{Lista de Abreviaturas}
@@ -208,20 +211,20 @@ text text text.
 \listoftables            
 
 % ---------------------------------------------------------------------------- %
-% Capítulos do trabalho
+% Cap�tulos do trabalho
 \mainmatter
 
-% cabeçalho para as páginas de todos os capítulos
+% cabe�alho para as p�ginas de todos os cap�tulos
 \fancyhead[RE,LO]{\thesection}
 
-\singlespacing              % espaçamento simples
-%\onehalfspacing            % espaçamento um e meio
+\singlespacing              % espa�amento simples
+%\onehalfspacing            % espa�amento um e meio
 
 \input cap-introducao        % associado ao arquivo: 'cap-introducao.tex'
 \input cap-conceitos         % associado ao arquivo: 'cap-conceitos.tex'
 \input cap-conclusoes        % associado ao arquivo: 'cap-conclusoes.tex'
 
-% cabeçalho para os apêndices
+% cabe�alho para os ap�ndices
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\appendixname\ \thechapter}} {\MakeUppercase{#1}} }
 \fancyhead[RE,LO]{}
 \appendix
@@ -230,18 +233,18 @@ text text text.
 
 % ---------------------------------------------------------------------------- %
 % Bibliografia
-\backmatter \singlespacing   % espaçamento simples
-\bibliographystyle{alpha-ime}% citação bibliográfica alpha
+\backmatter \singlespacing   % espa�amento simples
+\bibliographystyle{plainnat-ime} % cita��o bibliogr�fica textual
 \bibliography{bibliografia}  % associado ao arquivo: 'bibliografia.bib'
 
 % ---------------------------------------------------------------------------- %
-% índice remissivo
+% �ndice remissivo
 \index{TBP|see{periodicidade regi�o codificante}}
 \index{DSP|see{processamento digital de sinais}}
 \index{STFT|see{transformada de Fourier de tempo reduzido}}
 \index{DFT|see{transformada discreta de Fourier}}
 \index{Fourier!transformada|see{transformada de Fourier}}
 
-\printindex   % imprime o índice remissivo no documento 
+\printindex   % imprime o �ndice remissivo no documento 
 
 \end{document}

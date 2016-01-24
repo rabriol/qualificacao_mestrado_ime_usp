@@ -224,7 +224,7 @@ text text text.
 \input cap-conceitos         % associado ao arquivo: 'cap-conceitos.tex'
 \input cap-conclusoes        % associado ao arquivo: 'cap-conclusoes.tex'
 
-% cabe�alho para os ap�ndices
+% cabeçalho para os apêndices
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\appendixname\ \thechapter}} {\MakeUppercase{#1}} }
 \fancyhead[RE,LO]{}
 \appendix
@@ -233,18 +233,18 @@ text text text.
 
 % ---------------------------------------------------------------------------- %
 % Bibliografia
-\backmatter \singlespacing   % espa�amento simples
-\bibliographystyle{plainnat-ime} % cita��o bibliogr�fica textual
+\backmatter \singlespacing   % espaçamento simples
+\bibliographystyle{bibliografica-textual} % citação bibliográfica textual
 \bibliography{bibliografia}  % associado ao arquivo: 'bibliografia.bib'
 
 % ---------------------------------------------------------------------------- %
-% �ndice remissivo
+% índice remissivo
 \index{TBP|see{periodicidade regi�o codificante}}
 \index{DSP|see{processamento digital de sinais}}
 \index{STFT|see{transformada de Fourier de tempo reduzido}}
 \index{DFT|see{transformada discreta de Fourier}}
 \index{Fourier!transformada|see{transformada de Fourier}}
 
-\printindex   % imprime o �ndice remissivo no documento 
+\printindex   % imprime o índice remissivo no documento 
 
 \end{document}

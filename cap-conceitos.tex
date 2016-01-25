@@ -315,9 +315,117 @@ exportada para diversas linguagens.
 \label{sec:padroes_para_representacao_de_ontologias}
 
 Muitas linguagens utilizadas para representção de ontologias são baseadas na 
-tecnologia XML(Extensible Markup Language).
+tecnologia XML, mas também existem outras como Turtle e N3.
 
 \subsection{RDF}
 \index{ontologias!rdf}
 \label{sec:rdf}
 
+Desenvolvido pelo W3C, por meio da utilização de redes semânticas o RDF tem como 
+objetivo a representação do conhecimento. Embora não seja uma linguagem muito 
+expressiva, permite a representação de conceitos, taxonomias de conceitos e 
+relações binárias \cite{lassila1999resource}.
+
+A estrutura básica do RDF é um grafo dirigido e etiquetado, onde as arestas 
+dão nome a ligação entre dois recursos, que são representados pelos nós do grafo.
+A formalização desse grafo é um conjunto de triplas, composto por sujeito, 
+predicado e objeto.
+
+A figura \ref{fig:fig_tripla_rdf} apresenta uma trilpa em RDF.
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=.40\textwidth]{fig_tripla_rdf} 
+  \caption{Exemplo de tripla em RDF}
+  }
+  \label{fig:fig_tripla_rdf} 
+\end{figure}
+
+\vskip 0.6cm
+
+Fragmento de código em RDF: 
+
+\vskip 0.25cm
+
+\lstset{language=XML,basicstyle=\ttfamily,breaklines=true}
+\begin{lstlisting}
+<NamedIndividual rdf:about="&ontoSTF;DiasToffoli">
+    <rdf:type rdf:resource="&ontoSTF;Ministro"/>
+</NamedIndividual>
+\end{lstlisting} 
+
+\vskip 0.25cm
+
+Os recursos no RDF fazem referência a qualquer elemento, abstrato ou não, eles 
+podem também receber a denominação de entidades e devem sempre estar associados 
+por um identificador, ous seja, uma URI que seja capaz de fornecer identificação 
+única e global. A propriedade é um tipo especial de recurso dentro do RDF, que 
+descreve relações. Isso facilita a utilização em um ambiente de conhecimento 
+distribuído como a internet.
+
+Apesar do RDF ter sido publicado pelo W3C em XML, o mesmo pode utilizar outras 
+linguagens como as mencionadas acima, pois em camparação com o XML elas não 
+apresentam nenhuma diferença na capacidade de representação.
+
+\subsection{RDFs}
+\index{ontologias!rdfs}
+\label{sec:rdfs}
+
+O RDFs foi criado com o intuito expandir a expressividade semântica das 
+descrições criadas em RDF, pois embora o RDF seja muito flexível e expressivo, 
+o que torna possível dizer qualquer coisa sobre qualquer coisa 
+\cite{hebeler2011semantic}, por outro lado ele não consegue dar suporte para 
+especificação de significados semântico.
+
+O RDFs fornece mecanismos para descrever grupos de recursos relacionados e a 
+relação entre esses recursos. Uma classes em RFDs se 
+assemelha a uma classe do paradigma de programação de orientação a objetos, pois
+é possível descrever hierarquias de especialização/generalização de classes e
+criar objetos como instâncias dessas classes.
+
+As principais classes utilizadas no RDFs, são:
+
+\begin{itemize}
+    \item \textbf{rdfs:Resource}, é a classe de todos os recursos;
+    
+    \item \textbf{rdfs:Class}, é a classe de todas as classes;
+    
+    \item \textbf{rdfs:Literal}, é a classe de todos literais (string);
+    
+    \item \textbf{rdfs:Property}, é a classe de todas as propriedades;
+    
+    \item \textbf{rdfs:Statement}, é a classe de todas as declarações 
+    representadas;
+    
+    Alguns dos termos presentes na codificação das relações semânticas em RDFs 
+    são:
+    
+    \item \textbf{rdfs:type}, que relaciona um recurso a uma classe, declarando-o
+    como uma instância daquela classe;
+    
+    \item \textbf{rdfs:subClassOf}, é quem relaciona uma classe com algumas de 
+    suas superclasses;
+    
+    \item \textbf{rdfs:subPropertyOf}, que relaciona uma propriedade com algumas
+    de suas superpropriedades;
+    
+    O RDFs ainda da suporte para algumas restrições semânticas das propriedades,
+    como:
+    
+    \item \textbf{rdfs:domain}, que especifica um domínio de uma dada propriedade,
+    ditando que qualquer recurso que tem essa propriedade é uma instância das 
+    classes referenciadas nesse domínio;
+    
+    \item \textbf{rdfs:range}, que especifica o alcance da propriedade;
+\end{itemize}
+
+%%TODO incluir imagem e XML com exemplo de RDFs
+
+\subsection{OWL}
+\index{ontologias!owl}
+\label{sec:owl}
+
+O OWL é uma extensão do vocabulário RDFs, que foi criado com o intuito de dar 
+suporte a recursos que permitem construção de ontologias mais complexas voltadas
+para a web. Ela introduziu novas restrições na estrutura de representação do RDF,
+com o objetivo de tornar as inferências computacionais decidíveis.

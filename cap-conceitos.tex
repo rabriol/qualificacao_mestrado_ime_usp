@@ -429,3 +429,98 @@ O OWL é uma extensão do vocabulário RDFs, que foi criado com o intuito de dar
 suporte a recursos que permitem construção de ontologias mais complexas voltadas
 para a web. Ela introduziu novas restrições na estrutura de representação do RDF,
 com o objetivo de tornar as inferências computacionais decidíveis.
+
+Dentre as várias características que a linguagem OWL apresenta, as mais 
+relevantes para este trabalho são:
+
+\begin{itemize}
+    
+    \item \textit{Indivíduos}
+    
+    Os indivíduos representam o objeto no domínio de interesse. Como não 
+    utiliza o \textit{Unique Name Assumption}, o OWL permite que dois nomes 
+    diferentes referêncie o mesmo indíviduo. Exemplo, \textit{Queen Elizabeth} 
+    (Rainha Elizabeth) e \textit{Elizabeth Windsor} podem ser referências ao 
+    mesmo indíviduo. No OWL deve ser declarado explicitamente que os indíviduos 
+    são os mesmo, ou diferentes uns dos outros \cite{horridge2004practical}.
+    
+    \item \textit{Propriedades}
+    
+    As propriedades são relações binárias entre os indivíduos, esta relação pode 
+    ser entre indivíduos do tipo propriedade primitiva 
+    (\textit{DataType Property}), ou outro indivíduo do tipo propriedade objeto 
+    (\textit{Object Property}) \cite{horridge2004practical}. Por exemplo, a 
+    propriedade \textit{hasSibling liga o indivíduo Mathew ao indivíduo Gemma, 
+    ou a propriedade \textit{livesIn} pode ligar o indivíduo Mathew ao indivíduo 
+    England. A figura mostra os exemplos de propriedades que ligam indivíduos.
+    
+    \begin{figure}[!h]
+      \centering
+      \includegraphics[width=.40\textwidth]{fig_owl_1} 
+      \caption{Relação entre propriedades e indivíduos}
+      }
+      \label{fig:fig_owl_1} 
+    \end{figure}
+
+    \vskip 0.6cm
+    
+    As propriedades também podem ser inversas. Por exemplo, a propriedade 
+    inversa de hasParent é hasChild.
+    
+    \begin{figure}[!h]
+      \centering
+      \includegraphics[width=.40\textwidth]{fig_owl_2} 
+      \caption{Relação inversa}
+      }
+      \label{fig:fig_owl_2} 
+    \end{figure}
+
+    \vskip 0.6cm
+    
+    As propriedades podem limitar-se a um único valor, estas são chamadas de 
+    propriedades funcionais. Na figura abaixo demonstra que Jean só pode ter 
+    uma única mãe biológica (\textit{hasBirthMother}).
+    
+    \begin{figure}[!h]
+      \centering
+      \includegraphics[width=.40\textwidth]{fig_owl_3} 
+      \caption{Relação funcional}
+      }
+      \label{fig:fig_owl_3} 
+    \end{figure}
+
+    \vskip 0.6cm
+    
+    \textit{Transitiva}: se a propriedade \textbf{p} é transitiva, e esta 
+    propriedade relaciona o indivíduo \textbf{a} com o indivíduo \textbf{b}, e a
+    mesma propriedade relaciona o indivíduo \textbf{b} com o indivíduo \textbf{c},
+    então pode-se inferir que o indivíduo \textbf{a} esta relacionado com o 
+    indivíduo \textbf{c} através da propriedade \textbf{p}. A figura demonstra 
+    o exemplo de transitividade.
+    
+    \begin{figure}[!h]
+      \centering
+      \includegraphics[width=.40\textwidth]{fig_owl_4} 
+      \caption{Relação transitiva}
+      }
+      \label{fig:fig_owl_4} 
+    \end{figure}
+    
+    \vskip 0.6cm
+    
+    \textit{Simétrica}: se a propriedade \textbf{p} é simétrica, e esta 
+    propriedade relaciona o indivíduo \textbf{a} com o indivíduo \textbf{b} então 
+    o indivíduo \textbf{b} também está relacionado com o indivíduo \textbf{a} pela
+    propriedade \textbf{p}. A figura demonstra um exemplo de propriedade simétrica.
+    
+    \begin{figure}[!h]
+      \centering
+      \includegraphics[width=.40\textwidth]{fig_owl_5} 
+      \caption{Relação simétrica}
+      }
+      \label{fig:fig_owl_5} 
+    \end{figure}
+    
+    
+    \vskip 0.6cm
+\end{itemize}

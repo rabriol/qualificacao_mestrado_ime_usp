@@ -167,38 +167,6 @@ ainda a define em 5 tipos:
 \end{itemize}
 
 %% ------------------------------------------------------------------------- %%
-\section{Construção de Ontologias}\index{ontologias!construção de ontologias}
-\label{sec:construção_de_ontologias}
-
-Primeiramente para a construção de uma ontologia de domínio, é necessário definir
-o seu domínio e escopo. Logo em seguida, ainda é necessário escolher uma 
-metodologia, uma ferramenta e uma linguagem que serão utilizadas para definir a 
-estrutura da ontologia. 
-
-Nem todas as ontologias possuem a mesma estrutura, mas todas possuem pelo menos 
-um dos elementos básicos, como:
-
-\begin{itemize}
-    \item \textit{Classes}
-    
-    Normalmente organizadas em taxonomias, as classes representam algum tipo de
-    integração da ontologia com um determinado domínio.
-    
-    \item \textit{Relações}
-    
-    Representam o tipo de interação entre os elementos do domínio (classes).
-    
-    \item \textit{Axiomas}
-    
-    São utilizados para modelar sentenças consideradas sempre verdadeiras.
-    
-    \item \textit{Instâncias}
-    
-    São utilizadas para representar elementos específicos, isto é, os próprios 
-    dados da ontologia.
-\end{itemize}
-
-%% ------------------------------------------------------------------------- %%
 \section{Metodologia para Construção de Ontologias}
 \index{ontologias!metodologias para construção de ontologias}
 \label{sec:metodologias_para_construcao_de_ontologias}
@@ -450,7 +418,7 @@ relevantes para este trabalho são:
     ser entre indivíduos do tipo propriedade primitiva 
     (\textit{DataType Property}), ou outro indivíduo do tipo propriedade objeto 
     (\textit{Object Property}) \cite{horridge2004practical}. Por exemplo, a 
-    propriedade \textit{hasSibling liga o indivíduo Mathew ao indivíduo Gemma, 
+    propriedade \textit{hasSibling} liga o indivíduo Mathew ao indivíduo Gemma, 
     ou a propriedade \textit{livesIn} pode ligar o indivíduo Mathew ao indivíduo 
     England. A figura mostra os exemplos de propriedades que ligam indivíduos.
     
@@ -458,12 +426,9 @@ relevantes para este trabalho são:
       \centering
       \includegraphics[width=.40\textwidth]{fig_owl_1} 
       \caption{Relação entre propriedades e indivíduos}
-      }
       \label{fig:fig_owl_1} 
     \end{figure}
 
-    \vskip 0.6cm
-    
     As propriedades também podem ser inversas. Por exemplo, a propriedade 
     inversa de hasParent é hasChild.
     
@@ -471,11 +436,10 @@ relevantes para este trabalho são:
       \centering
       \includegraphics[width=.40\textwidth]{fig_owl_2} 
       \caption{Relação inversa}
-      }
       \label{fig:fig_owl_2} 
     \end{figure}
 
-    \vskip 0.6cm
+    \vskip 4cm
     
     As propriedades podem limitar-se a um único valor, estas são chamadas de 
     propriedades funcionais. Na figura abaixo demonstra que Jean só pode ter 
@@ -485,7 +449,6 @@ relevantes para este trabalho são:
       \centering
       \includegraphics[width=.40\textwidth]{fig_owl_3} 
       \caption{Relação funcional}
-      }
       \label{fig:fig_owl_3} 
     \end{figure}
 
@@ -502,7 +465,6 @@ relevantes para este trabalho são:
       \centering
       \includegraphics[width=.40\textwidth]{fig_owl_4} 
       \caption{Relação transitiva}
-      }
       \label{fig:fig_owl_4} 
     \end{figure}
     
@@ -517,10 +479,31 @@ relevantes para este trabalho são:
       \centering
       \includegraphics[width=.40\textwidth]{fig_owl_5} 
       \caption{Relação simétrica}
-      }
       \label{fig:fig_owl_5} 
     \end{figure}
     
-    
     \vskip 0.6cm
 \end{itemize}
+
+\subsection{SPARQL}
+\index{ontologias!sparql}
+\label{sec:sparql}
+
+O SPARQL é uma linguagem de consulta que é capaz de recuperar e manipular 
+informações armazenadas no formato RDF. Por ser uma linguagem orientado a dados, 
+isso implica que não existe nenhum motor de inferência na própria linguagem.
+
+As consultas no SPARQL são baseadas em triplas RDF, ou seja, compostas por 
+\textit{sujeito}, \textit{predicado} e \textit{objeto}.
+
+\lstset{language=SQL,basicstyle=\ttfamily,breaklines=true}
+\begin{lstlisting}
+PREFIX p:<URI>
+ASK {
+        p:hasParent p:
+    }
+\end{lstlisting} 
+
+\vskip 0.6cm
+
+Na consulta acima <URI> é a URI

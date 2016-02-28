@@ -486,3 +486,31 @@ Os tipos de consultas que o SPARQL provê são \cite{beckett2006sparql}:
     booleano de uma base RDF
 
 \end{itemize}
+
+\subsection{OBDA}
+\index{ontologias!obda}
+\label{sec:obda}
+
+O Ontology-based data access (OBDA) trabalha adicionando uma camada semântica
+a uma base de dados. No paradigma do OBDA \cite{rodriguez2013ontology}, uma 
+ontologia define um esquema global de alto nível e provê um vocabulário para 
+as consultas de usuário. Isolando o usuário dos detalhes da estrutura da base 
+de dados (que pode ser banco de dados relacionais, banco de triplas, datalog, 
+etc). No OBDA as consultas do usuário são traduzidas para o vocabulário de dados 
+e então delegados para a base de dados.
+
+O OBDA é uma tripla O = <T,S,M>, onde:
+
+\begin{itemize}
+
+    \item \textbf{T} é o nível desejado de uma ontologia
+    
+    \item \textbf{S} é o banco de dados relacional representado a fonte de dados
+    
+    \item \textbf{M} é o conjunto de asserções de mapeamentos
+
+\end{itemize}
+
+\subsection{OBDA}
+\index{ontologias!obda}
+\label{sec:obda}

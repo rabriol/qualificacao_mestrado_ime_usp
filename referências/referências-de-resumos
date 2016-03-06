@@ -1,0 +1,66 @@
+Boa tarde,
+
+Convido a todos para meu exame de qualificação de mestrado em Ciência da Computação.
+
+Título: "Utilização de Ontologias para Busca em um Sistema Colaborativo de Imagens Arquitetônicas"
+
+Candidata: Marisol Solis Yucra
+Orientadora: Profa. Dra. Renata Wassermann
+
+Data: Quinta-feira, 02 de outubro de 2014
+Local: Sala 144 - Bloco B, IME-USP
+Horário: 10h00
+
+Comissão julgadora:
+
+Membros titulares:
+Profa. Dra. Renata Wassermann (Presidente) - IME-USP
+Prof. Dr. Flávio Soares Corrêa da Silva    - IME-USP
+Profa. Dra. Vânia Mara Alves Lima          - ECA-USP
+
+Membros suplentes:
+Profa. Dra. Leliane Nunes de Barros - IME-USP
+Prof. Dr. Marco Aurélio Gerosa      - IME-USP
+
+
+Resumo:
+
+Nos últimos anos, as redes sociais vêm ganhando força, um exemplo
+disso é o Arquigrafia, um sistema colaborativo de compartilhamento de
+imagens arquitetônicas.  Os usuários podem  inserir informações para
+descrever as imagens arquitetônicas através do uso de descrições
+textuais, metadados sobre autoria, data e etiquetas (tags). O
+Arquigrafia possui um sistema de busca de imagens em que o usuário
+escreve sua consulta utilizando uma linguagem livre. A busca é feita
+por palavras-chave, ocasionando algumas vezes termos ambíguos que o
+atual motor de busca não resolve, prejudicando os resultados e
+retornando imagens irrelevantes ou deixando de devolver as imagens
+relevantes. Por outro lado, o volume de dados do sistema mencionado
+cresce diariamente, fazendo que sua organização e classificação seja
+essencial.
+
+Este trabalho propõe utilizar uma abordagem baseada em ontologias em
+conjunto com as técnicas de recuperação da informação, com o objetivo
+de recuperar informação relevante e desejada pelo usuário. Nesta
+abordagem a ontologia é uma representação do conhecimento do domínio
+de arquitetura para o sistema de Arquigrafia. Para sua construção,
+utiliza-se a informação registrada no sistema Arquigrafia, como as
+etiquetas, os títulos e os autores de cada imagem, conjuntamente com o
+histórico de consultas e o vocabulário controlado da USP para a área
+de arquitetura.
+
+Assim, por meio da ontologia,  pode-se obter termos similares aos
+termos pertencentes à consulta solicitada pelo usuário, que serão
+adicionados à consulta inicial, transformando-a numa consulta
+expandida. A nova consulta será utilizada pelo processo de recuperação
+da informação, que calculará a similaridade entre os termos
+pertencentes aos documentos que contêm informação das imagens, com os
+termos pertences à consulta; como resultado desse cálculo serão
+mostradas as imagens mais relevantes à consulta solicitada pelo
+usuário.
+
+Todos são bem-vindos!
+
+Atenciosamente,
+
+Marisol

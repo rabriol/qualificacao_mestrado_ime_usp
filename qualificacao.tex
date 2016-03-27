@@ -142,37 +142,41 @@ em Base de Dados de Acórdãos do STF}
 Universidade de São Paulo, São Paulo, 2016.
 \\
 
-O presente estudo enfoca a utilização de ontologias para recuperação de 
-informações jurídicas contidas nos acórdãos do STF. Serão também empregadas 
-tecnologias como SPARQL que possibilita a realização de consultas e OBDA que
-permite a criação de uma camada semântica em uma base de dados relacional.
+A internet revolucionou a forma como a informação passou a ser disseminada, 
+por meio dela também foi possível transmitir conhecimento em uma velocidade 
+nunca antes imaginada e para que fosse possível absorver tudo isso na mesma 
+velocidade que cresce, surgiram tecnologias como a Web Semântica visando dar aos
+computadores a possibilidade de não somente apresentar a informação, mas também
+de poder interpretá-la.
+
+No âmbito do direito os acórdãos são os documentos j    urídicos que contém informações 
+sobre os julgamentos passados. Nestes documentos é possível identificar por exemplo,
+qual tem sido a interpretação de alguns juízes sobre uma determinada lei. Ter
+acesso a este conhecimento é de extremo valor por exemplo para advogados, pois, 
+com este tipo de informação, pode-se preparar uma defesa de um cliente, com mais 
+argumentos com o intuito de aumentar as chances de se ganhar a causa.
+
+O STF (Supremo Tribunal Federal) mantém uma base de dados de acórdãos e estes
+compõem sua jurisprudência pois abordam assuntos que dizem respeito a constituição. 
+Esta informação esta disponível a todos, porém encontrar informação relevante é 
+uma tarefa árdua que muitas vezes exige um nível de conhecimento altíssimo sobre 
+o assunto que se deseja pesquisar.
+
+Além disso todo novo caso julgado acaba compilado em um novo acórdão e este documento
+termina por ser adicionado a base de dados, juntamente aos demais acórdãos. Essa
+dinâmica resulta por dificultar ainda mais o trabalho manual de identificar 
+informação relevante.
+
+O presente estudo tem por objetivo a utilização de ontologias para a criação de 
+uma representação do conhecimento contido nos acórdãos do STF. Sua construção será 
+feita com o auxílio da tecnologia OBDA (Ontology Based Data Access) que permite 
+a criação de uma camada semântica sobre uma base de dados relacional. Será também 
+empregado a tecnologia SPARQL que possibilita a realização de consultas semånticas
+e se diferencia por permitir aquição de novo conhecimento por meio de técnicas
+como inferência sobre a base de conhecimento.
 \\
 
-\noindent \textbf{Palavras-chave:} ontologia, obda, acórdão
-
-% ---------------------------------------------------------------------------- %
-% Abstract
-\chapter*{Abstract}
-\noindent SOBRENOME, A. B. C. \textbf{T�tulo do trabalho em ingl�s}. 
-2010. 120 f.
-Tese (Doutorado) - Instituto de Matem�tica e Estat�stica,
-Universidade de S�o Paulo, S�o Paulo, 2010.
-\\
-
-
-Elemento obrigat�rio, elaborado com as mesmas caracter�sticas do resumo em
-l�ngua portuguesa. De acordo com o Regimento da P�s- Gradua��o da USP (Artigo
-99), deve ser redigido em ingl�s para fins de divulga��o. 
-Text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text.
-Text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text text text text text
-text text text.
-\\
-
-\noindent \textbf{Keywords:} keyword1, keyword2, keyword3.
+\noindent \textbf{Palavras-chave:} ontologia, obda, acórdão, sparql
 
 % ---------------------------------------------------------------------------- %
 % Sumário
@@ -191,10 +195,10 @@ text text text.
 \end{tabular}
 
 % ---------------------------------------------------------------------------- %
-\chapter{Lista de S�mbolos}
+\chapter{Lista de Símbolos}
 \begin{tabular}{ll}
-        $\omega$    & Frequ�ncia angular\\
-        $\psi$      & Fun��o de an�lise \emph{wavelet}\\
+        $\omega$    & Frequência angular\\
+        $\psi$      & Função de análise \emph{wavelet}\\
         $\Psi$      & Transformada de Fourier de $\psi$\\
 \end{tabular}
 
@@ -204,14 +208,14 @@ text text text.
 \listoftables            
 
 % ---------------------------------------------------------------------------- %
-% Cap�tulos do trabalho
+% Capítulos do trabalho
 \mainmatter
 
-% cabe�alho para as p�ginas de todos os cap�tulos
+% cabeçalho para as páginas de todos os capítulos
 \fancyhead[RE,LO]{\thesection}
 
-\singlespacing              % espa�amento simples
-%\onehalfspacing            % espa�amento um e meio
+\singlespacing              % espaçamento simples
+%\onehalfspacing            % espaçamento um e meio
 
 \input cap-introducao        % associado ao arquivo: 'cap-introducao.tex'
 \input cap-conceitos         % associado ao arquivo: 'cap-conceitos.tex'
@@ -232,7 +236,7 @@ text text text.
 
 % ---------------------------------------------------------------------------- %
 % índice remissivo
-\index{TBP|see{periodicidade regi�o codificante}}
+\index{TBP|see{periodicidade região codificante}}
 \index{DSP|see{processamento digital de sinais}}
 \index{STFT|see{transformada de Fourier de tempo reduzido}}
 \index{DFT|see{transformada discreta de Fourier}}

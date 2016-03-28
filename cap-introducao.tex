@@ -1,91 +1,62 @@
 %% ------------------------------------------------------------------------- %%
-\chapter{Introdu��o}
+\chapter{Introdução}
 \label{cap:introducao}
 
-Escrever bem � uma arte que exige muita t�cnica e dedica��o. H� v�rios bons livros
-sobre como escrever uma boa disserta��o ou tese. Um dos trabalhos pioneiros e mais
-conhecidos nesse sentido � o livro de \citet{eco:09} intitulado 
-\emph{Como se faz uma tese}; � uma leitura bem interessante mas, como foi escrito 
-em 1977 e � voltado para teses de gradua��o na It�lia, n�o se aplica tanto a n�s.
+Por meio do portal do STF na área de Jurisprudênia\footnote{http://stf.jus.br/portal/jurisprudencia/pesquisarJurisprudencia.asp}, 
+profissionais da área de direito ou qualquer outro cidadão, têm acesso a todos 
+os acórdãos que formam a jurisprudência do orgão. A ferramenta de pesquisa permite 
+realizar buscas por acórdãos com base em diversos critérios, como, número do 
+acórdão, nome do ministro, data, órgão julgador, legislação etc. 
 
-Para a escrita de textos em Ci�ncia da Computa��o, o livro de Justin Zobel, 
-\emph{Writing for Computer Science} \citep{zobel:04} � uma leitura obrigat�ria. 
-O livro \emph{Metodologia de P Contribuesquisa para Ci�ncia da Computa��o} de 
-\citet{waz:09} tamb�m merece uma boa lida.
-J� para a �rea de Matem�tica, dois livros recomendados s�o o de Nicholas Higham,
-\emph{Handbook of Writing for Mathematical Sciences} \citep{Higham:98} e o do criador
-do \TeX, Donald Knuth, juntamente com Tracy Larrabee e Paul Roberts, 
-\emph{Mathematical Writing} \citep{Knuth:96}.
+Porém, mesmo com todos estes critérios a busca não é uma tarefa simples, pois 
+o direito sempre demandou domínio extensivo da área por parte da pessoa que deseja 
+pesquisar algo, e como a busca leva em consideração somente os termos que foram 
+informados, os resultados nas buscas, na maiorias da vezes, não retorna 
+informação relevante e mesmo depois da busca ainda é necessário um trabalho de 
+separar o que realmente é interessante.
 
-O uso desnecess�rio de termos em lingua estrangeira deve ser evitado. No entanto,
-quando isso for necess�rio, os termos devem aparecer \emph{em it�lico}.
-
-\begin{small}
-\begin{verbatim}
-Modos de cita��o:
-indesej�vel: [AF83] introduziu o algoritmo �timo.
-indesej�vel: (Andrew e Foster, 1983) introduziram o algoritmo �timo.
-certo : Andrew e Foster introduziram o algoritmo �timo [AF83].
-certo : Andrew e Foster introduziram o algoritmo �timo (Andrew e Foster, 1983).
-certo : Andrew e Foster (1983) introduziram o algoritmo �timo.
-\end{verbatim}
-\end{small}
-
-Uma pr�tica recomend�vel na escrita de textos � descrever as legendas das
-figuras e tabelas em forma auto-contida: as legendas devem ser razoavelmente
-completas, de modo que o leitor possa entender a figura sem ler o texto onde a
-figura ou tabela � citada.  
-
-Apresentar os resultados de forma simples, clara e completa � uma tarefa que
-requer inspira��o. Nesse sentido, o livro de \citet{tufte01:visualDisplay},
-\emph{The Visual Display of Quantitative Information}, serve de ajuda na
-cria��o de figuras que permitam entender e interpretar dados/resultados de forma
-eficiente.
-
-% \emph{Thesis are random access. Do NOT feel obliged to read a thesis from beginning to end.}
-
-
+Assim, este trabalho se propõe a elaborar uma nova abordagem de consulta, por meio
+da construção de uma ontologia de domínio para a base de acórdãos do STF. Além 
+disso, isto é esperado como resultado do trabalho buscas mais dinâmicas por meio 
+da web semântica.
 
 %% ------------------------------------------------------------------------- %%
-\section{Considera��es Preliminares}
-\label{sec:consideracoes_preliminares}
+\section{Motivação}
+\label{sec:motivacao}
 
-Considera��es preliminares\footnote{Nota de rodap� (n�o abuse).}\index{genoma!projetos}.
-% index permite acrescentar um item no indice remissivo
-Texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto.
- 
+A base de dados do STF é composta por um grande volume de acórdãos, e além do que 
+já existe, a cada dia mais, soma-se a esta base novos casos a medida que vão sendo
+julgados. O mecanismo de busca permite a utilização de vários critérios, mas 
+mesmo eles tornam a busca na maioria das vezes engessada, uma vez que trabalha 
+considerando somente os termos que foram informados e não utiliza nenhum 
+mecanismo de semântica o que poderia dar um maior dinamismo as buscas.
+
+Por isto o desenvolvimento de um sistema de busca baseado em ontologia 
+possibilitaria buscas mais dinâmicas, facilitando o processo de pesquisa por 
+até mesmo, pessoas que possuem determinado grau de leigo no domínio do direito.
 
 %% ------------------------------------------------------------------------- %%
 \section{Objetivos}
 \label{sec:objetivo}
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto.
-
-%% ------------------------------------------------------------------------- %%
-\section{Contribui��es}
-\label{sec:contribucoes}
-
-As principais contribui��es deste trabalho s�o as seguintes:
+Objetivos Gerais:
 
 \begin{itemize}
-  \item Item 1. Texto texto texto texto texto texto texto texto texto texto
-  texto texto texto texto texto texto texto texto texto texto.
-
-  \item Item 2. Texto texto texto texto texto texto texto texto texto texto
-  texto texto texto texto texto texto texto texto texto texto.
-
+    \item Construir uma ontologia de domínio de acórdãos do STF por meio da tecnologia OBDA.
+    
+    \item Implementar um sistema com interface de pesquisa dos acórdãos
 \end{itemize}
 
 %% ------------------------------------------------------------------------- %%
-\section{Organiza��o do Trabalho}
+\section{Contribuições}
+\label{sec:contribucoes}
+
+
+
+%% ------------------------------------------------------------------------- %%
+\section{Organização do Trabalho}
 \label{sec:organizacao_trabalho}
 
-No Cap�tulo~\ref{cap:conceitos}, apresentamos os conceitos ... Finalmente, no
-Cap�tulo~\ref{cap:conclusoes} discutimos algumas conclus�es obtidas neste
-trabalho. Analisamos as vantagens e desvantagens do m�todo proposto ... 
+No Capítulo~\ref{cap:conceitos}, apresentamos os conceitos.
 
-As sequ�ncias testadas no trabalho est�o dispon�veis no Ap�ndice \ref{ape:sequencias}.
+
